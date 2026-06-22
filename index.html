@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creoviz Academy — Learn Creative Skills Online</title>
+  <meta name="description" content="Master video editing, motion graphics, and graphic design from industry professionals at Creoviz Academy. Project-based online learning.">
+  <meta name="keywords" content="video editing course, motion graphics, graphic design, online academy, creative skills">
+  <meta property="og:title" content="Creoviz Academy — Learn Creative Skills Online">
+  <meta property="og:description" content="Project-based creative courses taught by industry professionals.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/Asset 5@4x.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorations -->
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="logo">
+      <a href="#" data-nav="home" class="nav-link-js" aria-label="Creoviz Academy Home">
+        <img src="assets/Asset 1@4x.png" alt="Creoviz Academy Logo" id="nav-logo">
+      </a>
+    </div>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#" class="nav-link-js active" data-nav="home">Home</a></li>
+      <li><a href="#" class="nav-link-js" data-nav="courses">Courses</a></li>
+      <li><a href="#" class="nav-link-js" data-nav="about">About</a></li>
+      <li><a href="#" class="nav-link-js" data-nav="contact">Contact</a></li>
+      <li><a href="#" class="nav-cta open-modal" id="nav-enroll-btn">Enroll Now</a></li>
+    </ul>
+
+    <button class="nav-hamburger" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile" id="nav-mobile" role="dialog" aria-label="Mobile navigation">
+    <ul role="list">
+      <li><a href="#" class="nav-link-js" data-nav="home">Home</a></li>
+      <li><a href="#" class="nav-link-js" data-nav="courses">Courses</a></li>
+      <li><a href="#" class="nav-link-js" data-nav="about">About</a></li>
+      <li><a href="#" class="nav-link-js" data-nav="contact">Contact</a></li>
+    </ul>
+    <a href="#" class="nav-cta-mobile open-modal">Enroll Now →</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       MAIN CONTENT
+  ════════════════════════════════════════════════════════ -->
+  <main style="position:relative; z-index:1;">
+
+    <!-- ─────────────────────── HOME VIEW ──────────────────── -->
+    <div id="page-home" class="page-view active">
+
+      <!-- Hero -->
+      <section class="hero grid-bg">
+        <div class="container">
+          <div class="hero-inner">
+
+            <!-- Left Copy -->
+            <div class="hero-content">
+              <div class="hero-badge">
+                <span class="dot"></span>
+                Industry-Backed Creative Programs
+              </div>
+              <h1>
+                Learn Creative<br>
+                <span class="gradient-text">Skills Online</span>
+              </h1>
+              <p>
+                Unlock your creative career with project-based video editing, motion graphics, and graphic design courses taught by working professionals.
+              </p>
+              <div class="hero-actions">
+                <button class="btn btn-primary btn-lg open-modal" id="hero-enroll-btn">
+                  Enroll Now
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <button class="btn btn-outline btn-lg nav-link-js" data-nav="courses">
+                  Explore Courses
+                </button>
+              </div>
+              <div class="hero-stats">
+                <div>
+                  <div class="hero-stat-value">10k+</div>
+                  <div class="hero-stat-label">Students</div>
+                </div>
+                <div>
+                  <div class="hero-stat-value">15+</div>
+                  <div class="hero-stat-label">Mentors</div>
+                </div>
+                <div>
+                  <div class="hero-stat-value">98%</div>
+                  <div class="hero-stat-label">Success</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Visual -->
+            <div class="hero-visual">
+              <div class="hero-card">
+                <div class="hero-card-header">
+                  <img src="assets/Asset 1@4x.png" alt="Creoviz Academy" class="hero-card-logo">
+                </div>
+                <div class="hero-card-body">
+                  <div class="hero-course-preview">
+                    <div class="hero-course-icon" style="background:rgba(43,199,196,0.1); color:var(--primary); display:flex; align-items:center; justify-content:center;">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+                    </div>
+                    <div>
+                      <div class="hero-course-name">Video Editing Masterclass</div>
+                      <div class="hero-course-meta">1 Hour Per Day · 48 Hours · Beginner to Advanced</div>
+                    </div>
+                  </div>
+                  <div class="hero-course-preview">
+                    <div class="hero-course-icon" style="background:rgba(43,199,196,0.08); color:var(--primary); display:flex; align-items:center; justify-content:center;">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                    </div>
+                    <div>
+                      <div class="hero-course-name">Motion Graphics Masterclass</div>
+                      <div class="hero-course-meta">1 Hour Per Day · 72 Hours · Intermediate to Advanced</div>
+                    </div>
+                  </div>
+                  <div class="hero-course-preview">
+                    <div class="hero-course-icon" style="background:rgba(43,199,196,0.06); color:var(--primary); display:flex; align-items:center; justify-content:center;">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.03456 19.176 5.2824 19.25 5.52684 19.1991C6.54133 18.9877 7.5 19.5 7.5 20.5V21C7.5 21.5523 7.94772 22 8.5 22H12Z"/><circle cx="7.5" cy="10.5" r="1.5" fill="currentColor"/><circle cx="11.5" cy="7.5" r="1.5" fill="currentColor"/><circle cx="16.5" cy="9.5" r="1.5" fill="currentColor"/></svg>
+                    </div>
+                    <div>
+                      <div class="hero-course-name">Graphic Design Masterclass</div>
+                      <div class="hero-course-meta">1 Hour Per Day · 24 Hours · Beginner to Advanced</div>
+                    </div>
+                  </div>
+                  <div class="hero-live-tag">
+                    <span class="hero-live-dot"></span>
+                    Live Project Review · Every Friday
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Courses -->
+      <section>
+        <div class="container">
+          <div class="flex-between mb-12 reveal" style="flex-wrap:wrap; gap:16px;">
+            <div>
+              <div class="section-eyebrow">Featured Programs</div>
+              <h2 class="section-title">Our Most Popular Courses</h2>
+              <p class="section-desc">Start learning with our highest-rated tracks and build a portfolio that gets you hired.</p>
+            </div>
+            <button class="btn btn-ghost nav-link-js" data-nav="courses">
+              View All
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+          <div class="grid-3" id="featured-grid">
+
+            <!-- Card 1 -->
+            <div class="glass-card course-card reveal">
+              <div class="card-thumb">
+                <img src="assets/video_editing.png" alt="Video Editing Masterclass Banner" class="course-banner-img" loading="lazy">
+                <span style="position:absolute;top:14px;right:14px;background:rgba(43,199,196,0.85);color:#06171D;border-radius:50px;padding:3px 10px;font-size:0.68rem;font-weight:700;">Best Seller</span>
+              </div>
+              <div class="card-body">
+                <span class="card-tag">Video Editing</span>
+                <h3 class="card-title">Video Editing Masterclass</h3>
+                <p class="card-desc">Learn cinematic pacing, color grading, multi-cam editing, and dynamic audio design in Premiere Pro & DaVinci Resolve.</p>
+                <div class="card-meta">
+                  <span>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    48 Hours
+                  </span>
+                  <span>1 Hour Per Day</span>
+                  <span>Beginner to Advanced</span>
+                </div>
+                <div class="card-footer">
+                  <div>
+                    <div class="card-price">₹17,499</div>
+                    <div class="card-rating">
+                      <span class="star">★★★★★</span>
+                      <span style="color:var(--text-muted);">4.9 (4.2k)</span>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary btn-sm open-modal" data-course="Video Editing Masterclass">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="glass-card course-card reveal" style="transition-delay:0.1s;">
+              <div class="card-thumb">
+                <img src="assets/motion_graphics.png" alt="Motion Graphics Masterclass Banner" class="course-banner-img" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag">Motion Graphics</span>
+                <h3 class="card-title">Motion Graphics Masterclass</h3>
+                <p class="card-desc">Master keyframe animation, particle systems, green screen compositing and 3D camera moves in After Effects.</p>
+                <div class="card-meta">
+                  <span>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    72 Hours
+                  </span>
+                  <span>1 Hour Per Day</span>
+                  <span>Intermediate to Advanced</span>
+                </div>
+                <div class="card-footer">
+                  <div>
+                    <div class="card-price">₹26,499</div>
+                    <div class="card-rating">
+                      <span class="star">★★★★★</span>
+                      <span style="color:var(--text-muted);">4.8 (3.1k)</span>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary btn-sm open-modal" data-course="Motion Graphics Masterclass">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="glass-card course-card reveal" style="transition-delay:0.2s;">
+              <div class="card-thumb">
+                <img src="assets/graphic_design.png" alt="Graphic Design Masterclass Banner" class="course-banner-img" loading="lazy">
+                <span style="position:absolute;top:14px;right:14px;background:rgba(43,199,196,0.85);color:#06171D;border-radius:50px;padding:3px 10px;font-size:0.68rem;font-weight:700;">Trending</span>
+              </div>
+              <div class="card-body">
+                <span class="card-tag">Graphic Design</span>
+                <h3 class="card-title">Graphic Design Masterclass</h3>
+                <p class="card-desc">Typography hierarchy, color theory, grid systems, brand identity packages, and Figma wireframing from scratch.</p>
+                <div class="card-meta">
+                  <span>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    24 Hours
+                  </span>
+                  <span>1 Hour Per Day</span>
+                  <span>Beginner to Advanced</span>
+                </div>
+                <div class="card-footer">
+                  <div>
+                    <div class="card-price">₹7,499</div>
+                    <div class="card-rating">
+                      <span class="star">★★★★★</span>
+                      <span style="color:var(--text-muted);">4.9 (2.4k)</span>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary btn-sm open-modal" data-course="Graphic Design Masterclass">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section>
+        <div class="container">
+          <div class="reveal" style="background:linear-gradient(135deg,rgba(43,199,196,0.1) 0%,rgba(43,199,196,0.03) 100%);border:1px solid var(--primary-border);border-radius:var(--radius-xl);padding:64px 48px;text-align:center;">
+            <img src="assets/Asset 1@4x.png" alt="Creoviz Academy" style="height:44px;margin:0 auto 24px;display:block;opacity:0.9;">
+            <h2 style="font-size:clamp(1.8rem,3vw,2.8rem);font-weight:900;margin-bottom:16px;">Ready to Start Creating?</h2>
+            <p style="color:var(--text-secondary);font-size:1.05rem;margin-bottom:32px;max-width:520px;margin-left:auto;margin-right:auto;">Join 10,000+ students already transforming their creative careers with Creoviz Academy. Your first lesson is waiting.</p>
+            <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+              <button class="btn btn-primary btn-lg open-modal">Get Started Today</button>
+              <button class="btn btn-outline btn-lg nav-link-js" data-nav="courses">Browse Courses</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /page-home -->
+
+
+    <!-- ────────────────────── COURSES VIEW ─────────────────── -->
+    <div id="page-courses" class="page-view">
+      <section>
+        <div class="container">
+          <!-- Header -->
+          <div class="text-center mb-12 reveal" style="padding-top:40px;">
+            <div class="section-eyebrow" style="justify-content:center;">Full Catalog</div>
+            <h1 class="section-title">All Creative Courses</h1>
+            <p class="section-desc" style="margin:0 auto;">Lifetime access, real project files, live mentor reviews, and a vibrant community Discord.</p>
+          </div>
+
+          <!-- Filters Row -->
+          <div class="flex-between mb-8 reveal" style="flex-wrap:wrap;gap:16px;">
+            <div class="filter-tabs" role="group" aria-label="Course filters">
+              <button class="filter-tab active" data-filter="all">All Courses</button>
+              <button class="filter-tab" data-filter="Video">Video Editing</button>
+              <button class="filter-tab" data-filter="Motion">Motion Graphics</button>
+              <button class="filter-tab" data-filter="Design">Graphic Design</button>
+            </div>
+            <div class="search-wrap" style="width:280px;">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              <input type="text" id="course-search" placeholder="Search courses…" aria-label="Search courses">
+            </div>
+          </div>
+
+          <!-- Course Grid -->
+          <div class="grid-3" id="courses-grid">
+
+            <div class="glass-card course-card" data-category="Video" data-title="video editing masterclass">
+              <div class="card-thumb">
+                <img src="assets/video_editing.png" alt="Video Editing Masterclass Banner" class="course-banner-img" loading="lazy">
+                <span style="position:absolute;top:14px;right:14px;background:rgba(43,199,196,0.85);color:#06171D;border-radius:50px;padding:3px 10px;font-size:0.68rem;font-weight:700;">Best Seller</span>
+              </div>
+              <div class="card-body">
+                <span class="card-tag">Video Editing</span>
+                <h3 class="card-title">Video Editing Masterclass</h3>
+                <p class="card-desc">Cinematic pacing, color grading, multi-cam editing, and dynamic audio design in Premiere Pro & DaVinci Resolve.</p>
+                <div class="card-meta">
+                  <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 48 Hours</span>
+                  <span>1 Hour Per Day</span><span>Beginner to Advanced</span>
+                </div>
+                <div class="card-footer">
+                  <div><div class="card-price">₹17,499</div><div class="card-rating"><span class="star">★★★★★</span><span style="color:var(--text-muted);">4.9</span></div></div>
+                  <button class="btn btn-primary btn-sm open-modal" data-course="Video Editing Masterclass">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card course-card" data-category="Motion" data-title="motion graphics masterclass">
+              <div class="card-thumb">
+                <img src="assets/motion_graphics.png" alt="Motion Graphics Masterclass Banner" class="course-banner-img" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag">Motion Graphics</span>
+                <h3 class="card-title">Motion Graphics Masterclass</h3>
+                <p class="card-desc">Keyframe animation, particle systems, green screen compositing, and 3D camera movement in After Effects.</p>
+                <div class="card-meta">
+                  <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 72 Hours</span>
+                  <span>1 Hour Per Day</span><span>Intermediate to Advanced</span>
+                </div>
+                <div class="card-footer">
+                  <div><div class="card-price">₹26,499</div><div class="card-rating"><span class="star">★★★★★</span><span style="color:var(--text-muted);">4.8</span></div></div>
+                  <button class="btn btn-primary btn-sm open-modal" data-course="Motion Graphics Masterclass">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card course-card" data-category="Design" data-title="graphic design masterclass">
+              <div class="card-thumb">
+                <img src="assets/graphic_design.png" alt="Graphic Design Masterclass Banner" class="course-banner-img" loading="lazy">
+                <span style="position:absolute;top:14px;right:14px;background:rgba(43,199,196,0.85);color:#06171D;border-radius:50px;padding:3px 10px;font-size:0.68rem;font-weight:700;">Trending</span>
+              </div>
+              <div class="card-body">
+                <span class="card-tag">Graphic Design</span>
+                <h3 class="card-title">Graphic Design Masterclass</h3>
+                <p class="card-desc">Typography hierarchy, color theory, grid systems, brand identity packages, and Figma wireframing from scratch.</p>
+                <div class="card-meta">
+                  <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 24 Hours</span>
+                  <span>1 Hour Per Day</span><span>Beginner to Advanced</span>
+                </div>
+                <div class="card-footer">
+                  <div><div class="card-price">₹7,499</div><div class="card-rating"><span class="star">★★★★★</span><span style="color:var(--text-muted);">4.9</span></div></div>
+                  <button class="btn btn-primary btn-sm open-modal" data-course="Graphic Design Masterclass">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- No Results -->
+          <div id="no-results" class="no-results hidden">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <h3>No courses found</h3>
+            <p>Try adjusting your filters or search term.</p>
+          </div>
+
+        </div>
+      </section>
+    </div><!-- /page-courses -->
+
+
+    <!-- ─────────────────────── ABOUT VIEW ──────────────────── -->
+    <div id="page-about" class="page-view">
+      <section>
+        <div class="container" style="padding-top:40px;">
+
+          <!-- Mission -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-bottom:80px;" class="about-grid reveal">
+            <div>
+              <div class="section-eyebrow">Our Mission</div>
+              <h1 class="section-title">Bridging Creativity<br><span class="gradient-text">&amp; Career</span></h1>
+              <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+                <li style="display:flex;align-items:flex-start;gap:10px;color:var(--text-secondary);font-size:0.97rem;line-height:1.7;">
+                  <span style="color:var(--primary);font-size:1rem;margin-top:2px;flex-shrink:0;">&#9654;</span>
+                  Creoviz Academy helps students build creative skills through practical online learning.
+                </li>
+                <li style="display:flex;align-items:flex-start;gap:10px;color:var(--text-secondary);font-size:0.97rem;line-height:1.7;">
+                  <span style="color:var(--primary);font-size:1rem;margin-top:2px;flex-shrink:0;">&#9654;</span>
+                  Our courses focus on real-world projects and industry tools.
+                </li>
+                <li style="display:flex;align-items:flex-start;gap:10px;color:var(--text-secondary);font-size:0.97rem;line-height:1.7;">
+                  <span style="color:var(--primary);font-size:1rem;margin-top:2px;flex-shrink:0;">&#9654;</span>
+                  Learn from experienced mentors at your own pace.
+                </li>
+                <li style="display:flex;align-items:flex-start;gap:10px;color:var(--text-secondary);font-size:0.97rem;line-height:1.7;">
+                  <span style="color:var(--primary);font-size:1rem;margin-top:2px;flex-shrink:0;">&#9654;</span>
+                  Gain confidence, creativity, and job-ready skills.
+                </li>
+                <li style="display:flex;align-items:flex-start;gap:10px;color:var(--text-secondary);font-size:0.97rem;line-height:1.7;">
+                  <span style="color:var(--primary);font-size:1rem;margin-top:2px;flex-shrink:0;">&#9654;</span>
+                  Start your creative career with Creoviz Academy.
+                </li>
+              </ul>
+            </div>
+            <div class="grid-2" style="gap:16px;">
+              <div class="stat-card"><div class="stat-value">10k+</div><div class="stat-label">Global Students</div></div>
+              <div class="stat-card"><div class="stat-value">15+</div><div class="stat-label">Expert Mentors</div></div>
+              <div class="stat-card"><div class="stat-value">50+</div><div class="stat-label">Live Projects</div></div>
+              <div class="stat-card"><div class="stat-value">98%</div><div class="stat-label">Career Growth</div></div>
+            </div>
+          </div>
+
+          <!-- Why Creoviz -->
+          <div class="text-center mb-12 reveal">
+            <div class="section-eyebrow" style="justify-content:center;">Why Choose Us</div>
+            <h2 class="section-title">Why Choose Us</h2>
+          </div>
+          <div class="grid-3" style="margin-bottom:80px;">
+            <div class="feature-item feature-item--compact reveal">
+              <div class="feature-icon">🎯</div>
+              <div class="feature-title">Practical Learning</div>
+            </div>
+            <div class="feature-item feature-item--compact reveal" style="transition-delay:0.08s;">
+              <div class="feature-icon">💼</div>
+              <div class="feature-title">Industry Projects</div>
+            </div>
+            <div class="feature-item feature-item--compact reveal" style="transition-delay:0.16s;">
+              <div class="feature-icon">🎓</div>
+              <div class="feature-title">Expert Mentors</div>
+            </div>
+            <div class="feature-item feature-item--compact reveal" style="transition-delay:0.04s;">
+              <div class="feature-icon">📜</div>
+              <div class="feature-title">Certificate Included</div>
+            </div>
+            <div class="feature-item feature-item--compact reveal" style="transition-delay:0.12s;">
+              <div class="feature-icon">📱</div>
+              <div class="feature-title">Learn Anytime</div>
+            </div>
+            <div class="feature-item feature-item--compact reveal" style="transition-delay:0.2s;">
+              <div class="feature-icon">🚀</div>
+              <div class="feature-title">Career Support</div>
+            </div>
+          </div>
+
+          <!-- Meet the brand visual -->
+          <div class="reveal" style="background:linear-gradient(135deg,rgba(43,199,196,0.08) 0%,rgba(43,199,196,0.02) 100%);border:1px solid var(--primary-border);border-radius:var(--radius-xl);padding:56px;text-align:center;">
+            <img src="assets/Asset 1@4x.png" alt="Creoviz Academy" style="height:52px;margin:0 auto 20px;display:block;">
+            <p style="color:var(--text-secondary);max-width:500px;margin:0 auto 28px;line-height:1.7;">Built for the next generation of creative digital professionals. Where vision meets craft.</p>
+            <button class="btn btn-primary open-modal">Join Creoviz Today</button>
+          </div>
+
+        </div>
+      </section>
+    </div><!-- /page-about -->
+
+
+    <!-- ────────────────────── CONTACT VIEW ─────────────────── -->
+    <div id="page-contact" class="page-view">
+      <section>
+        <div class="container" style="padding-top:40px;">
+
+          <div class="text-center mb-12 reveal">
+            <div class="section-eyebrow" style="justify-content:center;">Get in Touch</div>
+            <h1 class="section-title">Let's Start <span class="gradient-text">Creating</span></h1>
+            <p class="section-desc" style="margin:0 auto;">Have questions about courses, system requirements, or team licensing? We respond within 12 hours.</p>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:start;" class="contact-grid">
+
+            <!-- Form -->
+            <div class="glass-card reveal" style="padding:40px;border-color:var(--primary-border);">
+              <form id="contact-form" novalidate>
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label class="form-label" for="c-name">Full Name</label>
+                    <input class="form-input" type="text" id="c-name" placeholder="John Doe" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="c-email">Email Address</label>
+                    <input class="form-input" type="email" id="c-email" placeholder="john@example.com" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="c-course">Course of Interest</label>
+                  <select class="form-input form-select" id="c-course">
+                    <option value="">Just saying hi!</option>
+                    <option>Video Editing Masterclass</option>
+                    <option>Motion Graphics Masterclass</option>
+                    <option>Graphic Design Masterclass</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="c-msg">Your Message</label>
+                  <textarea class="form-input" id="c-msg" rows="5" placeholder="Tell us about your creative goals…" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-full" style="justify-content:center;border-radius:var(--radius-sm);padding:14px;">Send Message</button>
+              </form>
+            </div>
+
+            <!-- Info -->
+            <div class="reveal" style="transition-delay:0.15s;">
+              <div class="glass-card" style="padding:32px;margin-bottom:24px;">
+                <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:24px;">Contact Information</h3>
+                <div class="contact-item">
+                  <div class="contact-icon">✉</div>
+                  <div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">hello@creovizacademy.com</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">💬</div>
+                  <div>
+                    <div class="contact-label">WhatsApp</div>
+                    <div class="contact-value"><a href="https://wa.me/918590008225" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none; transition:var(--transition); font-weight:600;">+91 85 90 00 82 25</a></div>
+                  </div>
+                </div>
+                <div class="contact-item" style="margin-bottom:0;">
+                  <div class="contact-icon">📍</div>
+                  <div>
+                    <div class="contact-label">Location</div>
+                    <div class="contact-value">Kerala, India</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="glass-card" style="padding:32px;">
+                <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Office Hours</h3>
+                <div style="display:flex;justify-content:space-between;font-size:0.88rem;margin-bottom:10px;">
+                  <span style="color:var(--text-muted);">Mon – Fri</span>
+                  <span style="color:var(--text-secondary);font-weight:600;">9 AM – 6 PM IST</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-size:0.88rem;margin-bottom:10px;">
+                  <span style="color:var(--text-muted);">Saturday</span>
+                  <span style="color:var(--text-secondary);font-weight:600;">10 AM – 3 PM IST</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-size:0.88rem;">
+                  <span style="color:var(--text-muted);">Sunday</span>
+                  <span style="color:var(--text-muted);">Closed</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div><!-- /page-contact -->
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/Asset 1@4x.png" alt="Creoviz Academy Logo">
+          <p>Premium creative skills education built for the next generation of digital designers, editors, and visual artists.</p>
+          <div class="footer-social">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter">𝕏</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">IG</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">▶</a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Dribbble">⊕</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Platform</div>
+          <ul class="footer-links">
+            <li><a href="#" class="nav-link-js" data-nav="home">Home</a></li>
+            <li><a href="#" class="nav-link-js" data-nav="courses">All Courses</a></li>
+            <li><a href="#" class="nav-link-js" data-nav="about">About Us</a></li>
+            <li><a href="#" class="nav-link-js" data-nav="contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Resources</div>
+          <ul class="footer-links">
+            <li><a href="#">Tutorial Assets</a></li>
+            <li><a href="#">Instructor Blog</a></li>
+            <li><a href="#">Discord Server</a></li>
+            <li><a href="#">FAQ Hub</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Legal</div>
+          <ul class="footer-links">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Creoviz Academy Ltd. All rights reserved.</span>
+        <span>Made with passion for creative workforces.</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       ENROLLMENT MODAL
+  ════════════════════════════════════════════════════════ -->
+  <div id="enroll-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">✕</button>
+      <div style="margin-bottom:24px;">
+        <img src="assets/Asset 1@4x.png" alt="Creoviz Academy" style="height:32px;margin-bottom:20px;">
+      </div>
+      <div class="modal-title" id="modal-title">Enroll in Creoviz Academy</div>
+      <div class="modal-subtitle">Fill in your details and we'll send your access credentials within 24 hours.</div>
+      <form id="enroll-form" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="e-name">Full Name</label>
+          <input class="form-input" type="text" id="e-name" placeholder="Alex Carter" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="e-email">Email Address</label>
+          <input class="form-input" type="email" id="e-email" placeholder="alex@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="e-course">Select Course</label>
+          <select class="form-input form-select" id="e-course">
+            <option>Video Editing Masterclass</option>
+            <option>Motion Graphics Masterclass</option>
+            <option>Graphic Design Masterclass</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Experience Level</label>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+            <label style="cursor:pointer;background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:10px;text-align:center;font-size:0.8rem;font-weight:600;transition:var(--transition);" id="level-beg">
+              <input type="radio" name="level" value="Beginner" checked style="display:none;">
+              🌱 Beginner
+            </label>
+            <label style="cursor:pointer;background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:10px;text-align:center;font-size:0.8rem;font-weight:600;transition:var(--transition);" id="level-mid">
+              <input type="radio" name="level" value="Intermediate" style="display:none;">
+              ⚡ Mid-Level
+            </label>
+            <label style="cursor:pointer;background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:10px;text-align:center;font-size:0.8rem;font-weight:600;transition:var(--transition);" id="level-adv">
+              <input type="radio" name="level" value="Advanced" style="display:none;">
+              🚀 Advanced
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-full" style="justify-content:center;border-radius:var(--radius-sm);padding:14px;font-size:0.95rem;">Submit Registration</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
