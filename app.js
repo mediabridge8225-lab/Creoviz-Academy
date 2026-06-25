@@ -218,15 +218,66 @@
 
         if (!name || !email) return;
 
-        closeModal();
-        form.reset();
-        resetLevelPicker();
+        // Disable submit button to prevent double submission
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Submitting...';
+        }
 
-        showToast(
-          '🎉 Registration Submitted!',
-          `Welcome, ${name}! Check ${email} for your ${course} access details.`,
-          'success'
-        );
+        const isNetlify = window.location.hostname.includes('netlify') || 
+                          (window.location.hostname !== 'localhost' && 
+                           window.location.hostname !== '127.0.0.1' && 
+                           !window.location.hostname.startsWith('192.168.') && 
+                           window.location.protocol !== 'file:');
+
+        const endpoint = isNetlify ? '/' : 'https://formspree.io/hello.creovizacademy@gmail.com';
+        const formData = new FormData(form);
+
+        const fetchOptions = {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json'
+          }
+        };
+
+        if (isNetlify) {
+          fetchOptions.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+          fetchOptions.body = new URLSearchParams(formData).toString();
+        } else {
+          fetchOptions.body = formData;
+        }
+
+        fetch(endpoint, fetchOptions)
+          .then((response) => {
+            if (response.ok) {
+              closeModal();
+              form.reset();
+              resetLevelPicker();
+
+              showToast(
+                '🎉 Registration Submitted!',
+                `Welcome, ${name}! Check ${email} for your ${course} access details.`,
+                'success'
+              );
+            } else {
+              throw new Error('Form submission failed.');
+            }
+          })
+          .catch((error) => {
+            console.error('Error submitting form:', error);
+            showToast(
+              '⚠️ Submission Error',
+              'Failed to submit registration. Please try again or contact support.',
+              'error'
+            );
+          })
+          .finally(() => {
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.textContent = 'Submit Registration';
+            }
+          });
       });
     }
   }
@@ -302,7 +353,7 @@
     const container = document.getElementById('toast-container');
     if (!container) return;
 
-    const icon = type === 'success' ? '✅' : 'ℹ️';
+    const icon = type === 'success' ? '✅' : (type === 'error' ? '❌' : 'ℹ️');
 
     const toast = document.createElement('div');
     toast.className = 'toast';
